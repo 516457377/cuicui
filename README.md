@@ -26,7 +26,7 @@ https://516457377.github.io/cuicui/
 
 <u>123123</u>
 
-[百度](www.baidu.com)
+[百度](http://www.baidu.com/)
 
 `abc`
 
