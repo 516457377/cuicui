@@ -35,6 +35,15 @@ function mySearch()
 
 <button onclick="mySearch()">搜索</button>
 	
+<input id="test" type="text" value="HTML5" />
+<div id="btn">查看input的值</div>
+<script>
+    var test = document.getElementById("test");
+    var btn = document.getElementById("btn");
+    btn.onclick = function(){
+        alert(test.value)
+    }
+</script>
 	
 </body>
 </html>
