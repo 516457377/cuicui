@@ -11,16 +11,11 @@
 
   
   <script>
-var btn = document.getElementById("search");
 function myFunction()
 {
   window.location.href='https://github.com/516457377/cuicui';
 	
-},
-function mySearch()
-	  {
-		 window.location.href='https://github.com/516457377/Note/search?q='+btn+'&unscoped_q='+btn;  
-	  }
+}
 	  
 </script>
 
@@ -28,13 +23,11 @@ function mySearch()
 
 <div class="container">
     <form action="" class="parent">
-        <input type="text" id="search" placeholder="搜索">
+        <input type="text" id="search2" placeholder="搜索">
         <input type="button" name="" id="" class="btn">
     </form>
 </div>
-
-<button onclick="mySearch()">搜索</button>
-	
+	<div>-----------------------------------------------</div>
 <input id="test" type="text" value="HTML5" />
 <div id="btn">查看input的值</div>
 <script>
@@ -44,6 +37,16 @@ function mySearch()
         alert(test.value)
     }
 </script>
-	
+<div>-----------------------------------------------</div>
+<!-- https://github.com/516457377/Note/search?q='+btn+'&unscoped_q='+btn; -->
+<input type="text" id="search" placeholder="搜索">
+<button onClick="onClick()">点击慢速搜索</button>
+	<script>
+	var tex = document.getElementById("search");
+	var word = 'https://github.com/516457377/Note/'+tex.value+'&unscoped_q='+tex.value;
+	function onClick(){
+		window.location.href=word;
+	}
+	</script>
 </body>
 </html>
