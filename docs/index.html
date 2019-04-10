@@ -37,7 +37,7 @@ function myFunction()
         alert(test.value)
     }
 </script>
-<div>-----------------------------------------------</div>
+<div>-----------------------------------------------+</div>
 <!-- https://github.com/516457377/Note/search?q='+btn+'&unscoped_q='+btn; -->
 <input type="text" id="search" placeholder="搜索">
 <button onClick="onClick()">点击慢速搜索</button>
@@ -45,7 +45,9 @@ function myFunction()
 	var tex = document.getElementById("search");
 	var word = 'https://github.com/516457377/Note/search?q='+tex.value+'&unscoped_q='+tex.value;
 	function onClick(){
-		window.location.href=word;
+		if(tex.value != ""){
+			window.location.href=word;
+		}	
 	}
 	</script>
 </body>
