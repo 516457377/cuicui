@@ -43,7 +43,7 @@ function myFunction()
 <button onClick="onClick()">点击慢速搜索</button>
 	<script>
 	var tex = document.getElementById("search");
-	var word = 'https://github.com/516457377/Note/'+tex.value+'&unscoped_q='+tex.value;
+	var word = 'https://github.com/516457377/Note/search?q='+tex.value+'&unscoped_q='+tex.value;
 	function onClick(){
 		window.location.href=word;
 	}
