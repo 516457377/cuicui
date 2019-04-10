@@ -11,14 +11,15 @@
 
   
   <script>
+var btn = document.getElementById("search");
 function myFunction()
 {
   window.location.href='https://github.com/516457377/cuicui';
 	
-}
+},
 function mySearch()
 	  {
-		 window.location.href='https://github.com/516457377/Note/search?q='+text+'&unscoped_q='+text;  
+		 window.location.href='https://github.com/516457377/Note/search?q='+btn+'&unscoped_q='+btn;  
 	  }
 	  
 </script>
@@ -27,7 +28,7 @@ function mySearch()
 
 <div class="container">
     <form action="" class="parent">
-        <input type="text" class="search" placeholder="搜索">
+        <input type="text" id="search" placeholder="搜索">
         <input type="button" name="" id="" class="btn">
     </form>
 </div>
