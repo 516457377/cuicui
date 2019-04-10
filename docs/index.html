@@ -37,7 +37,7 @@ function myFunction()
         alert(test.value)
     }
 </script>
-<div>------------------------------------------------</div>
+<div>-----------------------------------------------+</div>
 <!-- https://github.com/516457377/Note/search?q='+btn+'&unscoped_q='+btn; -->
 <input type="text" id="search" placeholder="搜索">
 <button onClick="onClick()" id="btC">点击慢速搜索</button>
@@ -47,6 +47,7 @@ function myFunction()
 	var btc = document.getElementById("btC");
 	btc.onclick = function(){
 		if(tex.value != ""){
+			alert(word)
 			window.location.href=word;
 		}	
 	}
