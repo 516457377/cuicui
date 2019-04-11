@@ -37,18 +37,19 @@ function myFunction()
         alert(test.value)
     }
 </script>
-<div>------------------------------------------------</div>
+<div>-----------------------------------------------+</div>
 <!-- https://github.com/516457377/Note/search?q='+btn+'&unscoped_q='+btn; -->
 <input type="text" id="search" placeholder="搜索">
 <button onClick="onClick()" id="btC">点击慢速搜索</button>
 	<script>
 	var tex = document.getElementById("search");
-	var word = 'https://github.com/516457377/Note/search?q='+tex.value+'&unscoped_q='+tex.value;
+	var word = '';
 	var btc = document.getElementById("btC");
 	btc.onclick = function(){
 		if(tex.value != ""){
 			console.log(tex.value);
-			alert(word)
+			word = 'https://github.com/516457377/Note/search?q='+tex.value+'&unscoped_q='+tex.value;
+			//alert(word)
 			window.location.href=word;
 			
 		}	
